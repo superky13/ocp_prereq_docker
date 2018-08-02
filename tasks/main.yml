@@ -8,7 +8,7 @@
   when: configure_deploy_docker_registry == 'True'
 
 - name: archive images to local tarball
-  include_tasks: archive.yml
+  include_tasks: archive_docker_images.yml
   when: archive_docker_images == 'True'
 
 - name: reposync and create offline repos
